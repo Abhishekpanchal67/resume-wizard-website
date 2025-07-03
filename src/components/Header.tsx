@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="text-2xl font-bold text-white tracking-tight">
-            Abhishek Panchal
+            {/* Name removed from header */}
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
