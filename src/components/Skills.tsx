@@ -18,17 +18,17 @@ export const Skills = () => {
   return (
     <section className="py-20">
       <div className="mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Skills & Expertise</h2>
-        <div className="w-16 h-1 bg-gray-900 mb-8"></div>
+        <h2 className="text-4xl font-bold text-white mb-6">Skills & Expertise</h2>
+        <div className="w-16 h-1 bg-white mb-8"></div>
       </div>
       
       <div className="space-y-12">
         {skillCategories.map((category, index) => (
           <div key={index}>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">{category.title}</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">{category.title}</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {category.skills.map((skill, skillIndex) => (
-                <div key={skillIndex} className="text-gray-700 py-2">
+                <div key={skillIndex} className="text-gray-300 py-2">
                   {skill}
                 </div>
               ))}

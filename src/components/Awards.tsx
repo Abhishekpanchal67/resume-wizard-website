@@ -14,18 +14,18 @@ export const Awards = () => {
   return (
     <section className="py-20">
       <div className="mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Awards & Recognition</h2>
-        <div className="w-16 h-1 bg-gray-900 mb-8"></div>
+        <h2 className="text-4xl font-bold text-white mb-6">Awards & Recognition</h2>
+        <div className="w-16 h-1 bg-white mb-8"></div>
       </div>
 
       <div className="space-y-8">
         {awards.map((award, index) => (
-          <div key={index} className="border-l-2 border-gray-200 pl-8">
+          <div key={index} className="border-l-2 border-white/20 pl-8">
             <div className="relative">
-              <div className="absolute -left-10 w-4 h-4 bg-gray-900 rounded-full"></div>
+              <div className="absolute -left-10 w-4 h-4 bg-white rounded-full"></div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{award.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{award.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{award.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{award.description}</p>
               </div>
             </div>
           </div>

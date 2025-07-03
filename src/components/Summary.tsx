@@ -3,9 +3,9 @@ export const Summary = () => {
   return (
     <section id="about" className="py-20">
       <div className="mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-        <div className="w-16 h-1 bg-gray-900 mb-8"></div>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
+        <h2 className="text-4xl font-bold text-white mb-6">About Me</h2>
+        <div className="w-16 h-1 bg-white mb-8"></div>
+        <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">
           Product and growth specialist with a proven track record of driving full-scale product development, 
           performance marketing, and process optimization. Proven success in launching scalable features, reducing 
           CAC, and generating high-revenue growth. Experienced in managing cross-functional teams, coordinating 

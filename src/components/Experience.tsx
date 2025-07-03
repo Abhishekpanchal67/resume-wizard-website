@@ -53,26 +53,26 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-20">
       <div className="mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Work Experience</h2>
-        <div className="w-16 h-1 bg-gray-900 mb-8"></div>
+        <h2 className="text-4xl font-bold text-white mb-6">Work Experience</h2>
+        <div className="w-16 h-1 bg-white mb-8"></div>
       </div>
 
       <div className="space-y-16">
         {experiences.map((exp, index) => (
-          <div key={index} className="border-l-2 border-gray-200 pl-8 pb-8">
+          <div key={index} className="border-l-2 border-white/20 pl-8 pb-8">
             <div className="relative">
-              <div className="absolute -left-10 w-4 h-4 bg-gray-900 rounded-full"></div>
+              <div className="absolute -left-10 w-4 h-4 bg-white rounded-full"></div>
               <div className="mb-4">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-2">{exp.title}</h3>
+                <h3 className="text-2xl font-semibold text-white mb-2">{exp.title}</h3>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                  <p className="text-lg text-gray-700 font-medium">{exp.company}</p>
-                  <p className="text-sm text-gray-500">{exp.duration}</p>
+                  <p className="text-lg text-gray-300 font-medium">{exp.company}</p>
+                  <p className="text-sm text-gray-400">{exp.duration}</p>
                 </div>
-                <p className="text-sm text-gray-500">{exp.location}</p>
+                <p className="text-sm text-gray-400">{exp.location}</p>
               </div>
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, achievementIndex) => (
-                  <li key={achievementIndex} className="text-gray-700 leading-relaxed">
+                  <li key={achievementIndex} className="text-gray-300 leading-relaxed">
                     • {achievement}
                   </li>
                 ))}
