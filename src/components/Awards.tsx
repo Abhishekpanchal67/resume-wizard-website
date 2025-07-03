@@ -1,7 +1,4 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Award, Star } from "lucide-react";
-
 export const Awards = () => {
   const awards = [
     {
@@ -15,29 +12,23 @@ export const Awards = () => {
   ];
 
   return (
-    <section className="py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Recognition for outstanding performance and leadership
-        </p>
+    <section className="py-20">
+      <div className="mb-16">
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">Awards & Recognition</h2>
+        <div className="w-16 h-1 bg-gray-900 mb-8"></div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="space-y-8">
         {awards.map((award, index) => (
-          <Card key={index} className="bg-gradient-to-br from-yellow-50 to-orange-50 border-yellow-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center text-lg font-bold text-gray-900">
-                <div className="p-2 bg-yellow-100 rounded-lg mr-3">
-                  {index === 0 ? <Star className="w-5 h-5 text-yellow-600" /> : <Award className="w-5 h-5 text-yellow-600" />}
-                </div>
-                {award.title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 leading-relaxed">{award.description}</p>
-            </CardContent>
-          </Card>
+          <div key={index} className="border-l-2 border-gray-200 pl-8">
+            <div className="relative">
+              <div className="absolute -left-10 w-4 h-4 bg-gray-900 rounded-full"></div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{award.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{award.description}</p>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </section>

@@ -10,16 +10,18 @@ import { Contact } from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main>
         <Hero />
-        <Summary />
-        <Skills />
-        <Experience />
-        <Education />
-        <Awards />
-        <Contact />
+        <div className="max-w-4xl mx-auto px-6 sm:px-8">
+          <Summary />
+          <Skills />
+          <Experience />
+          <Education />
+          <Awards />
+          <Contact />
+        </div>
       </main>
     </div>
   );
